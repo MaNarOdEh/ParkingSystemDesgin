@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cars_Search_Fragment"
+    android:layout_margin="15dp"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#ffffff"
+            android:layout_marginBottom="15dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_number_search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/rounded_button"
+                    android:textSize="10sp"
+                    android:text="Input A Number"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"
+              />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_search_by_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/white_rounded_btn"
+                    android:text="capture Image"
+                    android:textSize="10sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textAllCaps="false"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_search_by_video"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/white_rounded_btn"
+                    android:text="Video "
+                    android:textSize="10sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v4.view.ViewPager>
+  </LinearLayout>
+
+
+
+</ScrollView>

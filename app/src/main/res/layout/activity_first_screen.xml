@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstScreen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="25dp">
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="80dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:foregroundGravity="center"
+            android:layout_gravity="center"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/car"
+                />
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parking System"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textColor="#1d3156"
+            android:textSize="22sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Best Way to organize parking"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:text="Log In"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/rounded_button"
+            android:textSize="18sp"
+            android:textColor="#fff"/>
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:text="About App"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/gradient_button"
+            android:textSize="18sp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#28a9ff"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+
+
+</ScrollView>
