@@ -30,8 +30,6 @@ public class AdminMainActivity extends AppCompatActivity {
     //header Navigations
     CircleImageView img_profile;
     TextView txt_name,txt_phone;
-    FragmentManager fragmentManager ;
-    FragmentTransaction fragmentTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,12 +52,7 @@ public class AdminMainActivity extends AppCompatActivity {
         txt_name=headerView.findViewById(R.id.txt_name);
 
 
-         fragmentManager = getSupportFragmentManager();
-         fragmentTransaction = fragmentManager.beginTransaction();
-
         setAttributeForToolbar();
-
-
     }
 
     private void setAttributeForToolbar() {
@@ -103,15 +96,31 @@ public class AdminMainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.txt_search_car:
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction  fragmentTransaction = fragmentManager.beginTransaction();
                 Cars_Search_Fragment fragment = new Cars_Search_Fragment();
-                fragmentTransaction.add(R.id.frame_layout, fragment);
+                fragmentTransaction.replace(R.id.frame_layout, fragment);
                 fragmentTransaction.commit();
                 drawer_layout.closeDrawers();
                 break;
             case R.id.txt_employee:
+                FragmentManager fM = getSupportFragmentManager();
+                FragmentTransaction  fT = fM.beginTransaction();
+                EmployeeFragment employeeFragment=new EmployeeFragment();
+                fT.replace(R.id.frame_layout, employeeFragment);
+                fT.commit();
+                drawer_layout.closeDrawers();
                 break;
-
-
+            case R.id.txt_cars:
+                Intent intent1=new Intent(AdminMainActivity.this,car.class);
+                startActivity(intent1);
+               /* FragmentManager fMM = getSupportFragmentManager();
+                FragmentTransaction  fTT = fMM.beginTransaction();
+                NewCars cars_search_fragment=new NewCars();
+                fTT.replace(R.id.frame_layout, cars_search_fragment);
+                fTT.commit();*/
+                drawer_layout.closeDrawers();
+                break;
         }
 
     }

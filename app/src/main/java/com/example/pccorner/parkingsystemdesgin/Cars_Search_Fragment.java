@@ -4,10 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -108,7 +105,6 @@ public class Cars_Search_Fragment extends Fragment {
             btn_number_search.setBackgroundResource(R.drawable.white_rounded_btn);
             btn_search_by_image.setBackgroundResource(R.drawable.white_rounded_btn);
             viewPager.setCurrentItem(2);
-
             //change the color
             btn_search_by_video.setTextColor(getResources().getColor(R.color.colorBackground));
             btn_number_search.setTextColor(getResources().getColor(R.color.colorItem));

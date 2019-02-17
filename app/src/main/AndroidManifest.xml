@@ -21,7 +21,11 @@
         <activity android:name=".AdminMainActivity" />
         <activity android:name=".profile_admin" />
         <activity android:name=".Profile_cars_owner" />
-        <activity android:name=".search_by_viedo"></activity>
+        <activity android:name=".search_by_viedo" />
+        <activity android:name=".add_new_car" />
+        <activity android:name=".car" />
+        <activity android:name=".Employee" />
+        <activity android:name=".Add_Employee"></activity>
     </application>
 
 </manifest>
